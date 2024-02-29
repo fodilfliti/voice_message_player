@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/foundation.dart';
@@ -224,11 +225,14 @@ class VoiceController extends MyTicker {
   void _listenToPlayerState() {
     playerStateStream = _player.playerStateStream.listen((event) async {
       if (event.processingState == ProcessingState.completed) {
-        // await _player.stop();
-        // currentDuration = Duration.zero;
-        // playStatus = PlayStatus.init;
-        // animController.reset();
-        // _updateUi();
+        if (Platform.isWindows) {
+          await _player.stop();
+          currentDuration = Duration.zero;
+          playStatus = PlayStatus.init;
+          animController.reset();
+          _updateUi();
+        }
+
         // onComplete(id);
       } else if (event.playing) {
         playStatus = PlayStatus.playing;
