@@ -12,8 +12,14 @@ dependencies:
     sdk: flutter
   flutter_cache_manager: ^3.3.1
   just_audio: ^0.9.36
+  just_audio_windows:
+    git:
+      url: https://github.com/raojm/just_audio_windows.git
+      ref: 1c4d002a0a1b7d12996cef6aaae09aa6bc473750
+      path: just_audio_windows
+  # audioplayers: ^5.2.1
   # just_audio_media_kit: ^2.0.1
-  just_audio_windows: ^0.2.0
+  # just_audio_windows: ^0.2.0
   # media_kit_libs_linux: any
   # media_kit_libs_windows_audio: any
   syncfusion_flutter_sliders: ^23.2.6
