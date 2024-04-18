@@ -1,6 +1,6 @@
 name: voice_message
 description: A new Flutter project.
-publish_to: 'none'
+publish_to: "none"
 version: 1.0.0+1
 
 environment:
@@ -10,10 +10,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   sizer:
-  voice_message_package: 
+  voice_message_package:
     path: ../
-
-
 
 dev_dependencies:
   flutter_test:

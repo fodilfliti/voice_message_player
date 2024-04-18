@@ -22,7 +22,7 @@ dependencies:
   # just_audio_windows: ^0.2.0
   # media_kit_libs_linux: any
   # media_kit_libs_windows_audio: any
-  syncfusion_flutter_sliders: ^23.2.6
+  # syncfusion_flutter_sliders: ^25.1.40
 
 dev_dependencies:
   flutter_test:
